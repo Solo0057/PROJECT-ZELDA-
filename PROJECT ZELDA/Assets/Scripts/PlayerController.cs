@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     public Sprite upSprite;
     public Sprite leftSprite;
     public Sprite rightSprite;
-    public Sprite downSprite;
+    public Sprite frontSprite;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,22 +32,22 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey("w"))
         {
-            newPosition.y += speed;
+            newPosition.y += .05f;
             sr.sprite = upSprite;
         }
         if (Input.GetKey("s"))
         {
-            newPosition.y -= speed;
-            sr.sprite = downSprite;
+            newPosition.y -= .05f;
+            sr.sprite = frontSprite;
         }
         if (Input.GetKey("a"))
         {
-            newPosition.x -= speed;
+            newPosition.x -= .05f;
             sr.sprite = leftSprite;
         }
         if (Input.GetKey("d"))
         {
-            newPosition.x += speed;
+            newPosition.x += .05f;
             sr.sprite =rightSprite;
         }
         transform.position = newPosition;
