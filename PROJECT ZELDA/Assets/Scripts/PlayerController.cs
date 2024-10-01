@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEditor.Callbacks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -52,4 +53,17 @@ public class PlayerController : MonoBehaviour
         }
         transform.position = newPosition;
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    
+    {
+    
+        if (collision.gameObject.tag.Equals("HomeDoor"))
+        {
+            Debug.Log("change scene");
+            SceneManager.LoadScene(1);
+        }
+
+
 }
+}
+
