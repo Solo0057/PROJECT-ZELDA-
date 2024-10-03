@@ -56,14 +56,32 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     
     {
-    
+    //links room 
         if (collision.gameObject.tag.Equals("HomeDoor"))
         {
             Debug.Log("change scene");
             SceneManager.LoadScene(1);
         }
+if (collision.gameObject.tag.Equals("Door"))
+        {
+            Debug.Log("change scene");
+            SceneManager.LoadScene(0);
+        }
+    //Black Smith Room
+    if (collision.gameObject.tag.Equals("Blacksimithout"))
+        {
+            Debug.Log("change scene");
+            SceneManager.LoadScene(1);
+        }
+if (collision.gameObject.tag.Equals("BlackSmith"))
+        {
+            Debug.Log("change scene");
+            SceneManager.LoadScene(2);
+            
+        }
 
+
+
+    }
 
 }
-}
-
