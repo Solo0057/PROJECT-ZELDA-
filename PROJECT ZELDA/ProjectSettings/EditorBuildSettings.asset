@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/HyliaTown/Town.unity
     guid: fb493f7b423744ce0b123aa3dbfac252
   - enabled: 1
-    path: Assets/Scenes/BlackSmith.unity
+    path: Assets/Scenes/HyliaTown/BlackSmith.unity
     guid: 61112a62018af45bbac67120b2fa5f86
   m_configObjects: {}
