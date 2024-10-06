@@ -8,6 +8,14 @@ TagManager:
   - Door
   - BlackSmith
   - Blacksimithout
+  - FarmersHouse
+  - ItemShop
+  - TownSquare
+  - ShopOwners
+  - ShopOwnersOut
+  - ItemOut
+  - TownOut
+  - FarmersOut
   layers:
   - Default
   - TransparentFX

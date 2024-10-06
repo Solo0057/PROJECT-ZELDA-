@@ -33,22 +33,22 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey("w"))
         {
-            newPosition.y += .05f;
+            newPosition.y += .1f;
             sr.sprite = upSprite;
         }
         if (Input.GetKey("s"))
         {
-            newPosition.y -= .05f;
+            newPosition.y -= .1f;
             sr.sprite = frontSprite;
         }
         if (Input.GetKey("a"))
         {
-            newPosition.x -= .05f;
+            newPosition.x -= .1f;
             sr.sprite = leftSprite;
         }
         if (Input.GetKey("d"))
         {
-            newPosition.x += .05f;
+            newPosition.x += .1f;
             sr.sprite =rightSprite;
         }
         transform.position = newPosition;
@@ -77,6 +77,49 @@ if (collision.gameObject.tag.Equals("BlackSmith"))
         {
             Debug.Log("change scene");
             SceneManager.LoadScene(2);
+            
+        }
+if (collision.gameObject.tag.Equals("FarmersHouse"))
+        {
+            Debug.Log("change scene");
+            SceneManager.LoadScene(3);
+        }
+if (collision.gameObject.tag.Equals("FarmersOut"))
+        {
+            Debug.Log("change scene");
+            SceneManager.LoadScene(1);
+        }
+            if (collision.gameObject.tag.Equals("TownOut"))
+        
+        {
+            Debug.Log("change scene");
+            SceneManager.LoadScene(1);
+        }
+if (collision.gameObject.tag.Equals("TownSquare"))
+        {
+            Debug.Log("change scene");
+            SceneManager.LoadScene(6);
+            
+        }
+if (collision.gameObject.tag.Equals("ItemOut"))
+        {
+            Debug.Log("change scene");
+            SceneManager.LoadScene(1);
+        }
+if (collision.gameObject.tag.Equals("ItemShop"))
+        {
+            Debug.Log("change scene");
+            SceneManager.LoadScene(4);
+        }
+if (collision.gameObject.tag.Equals("ShopOwnersOut"))
+        {
+            Debug.Log("change scene");
+            SceneManager.LoadScene(1);
+        }
+if (collision.gameObject.tag.Equals("ShopOwners"))
+        {
+            Debug.Log("change scene");
+            SceneManager.LoadScene(5);
             
         }
 

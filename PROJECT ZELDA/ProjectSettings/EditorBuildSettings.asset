@@ -14,4 +14,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HyliaTown/BlackSmith.unity
     guid: 61112a62018af45bbac67120b2fa5f86
+  - enabled: 1
+    path: Assets/Scenes/HyliaTown/FarmersHouse.unity
+    guid: 63cbf5ccb8f034ffbb75e056b1eca679
+  - enabled: 1
+    path: Assets/Scenes/HyliaTown/ItemShop.unity
+    guid: 89995a4cf34ad4e1a8b5ac6f8162d23b
+  - enabled: 1
+    path: Assets/Scenes/HyliaTown/ShopOwners home.unity
+    guid: 6ea58e5a6cac94651a5d29aa10980076
+  - enabled: 1
+    path: Assets/Scenes/HyliaTown/TownSquare.unity
+    guid: e43de7d11af494035afc71537e9d04b6
   m_configObjects: {}
