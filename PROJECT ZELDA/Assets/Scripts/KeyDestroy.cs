@@ -18,11 +18,11 @@ public class KeyDestroy : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
 {
-    if (collision.gameObject.tag.Equals("player"))
+    if (collision.gameObject.tag.Equals("Player"))
     {
         Debug.Log("Ive been Collected");
         //destroy object after collection
-        Destroy(gameObject);
+        Destroy(this.gameObject);
     }
 }
 }
