@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     //public Rigidbody2D rb;
     public float speed;
     private SpriteRenderer sr;
+    public bool hasKey = false;
 
     //SPRITE VARIABLES 
     public Sprite upSprite;
@@ -121,6 +122,19 @@ if (collision.gameObject.tag.Equals("ShopOwners"))
             Debug.Log("change scene");
             SceneManager.LoadScene(5);
             
+        }
+
+        if (collision.gameObject.tag.Equals("Key"))
+        {
+            //PLAYER HAS KEY NOW
+            Debug.Log("obtainedkey");
+            hasKey = true;
+
+        }
+        if (collision.gameObject.tag.Equals("TBD") && hasKey == true)
+        {
+//entering new door
+        SceneManager.LoadScene(7); 
         }
 
 

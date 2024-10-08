@@ -16,6 +16,8 @@ TagManager:
   - ItemOut
   - TownOut
   - FarmersOut
+  - Key
+  - TBD
   layers:
   - Default
   - TransparentFX
